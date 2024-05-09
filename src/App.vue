@@ -2,6 +2,9 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
   <MiComponente></MiComponente>
+
+  <!-- Se cargan los componentes que correspondan a la ruta -->
+  <router-view></router-view>
 </template>
 
 <script>
