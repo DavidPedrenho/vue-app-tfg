@@ -1,26 +1,61 @@
 import { createApp } from 'vue';
-import Vue from 'vue';
 import App from './App.vue'
-import VueRouter from 'vue-router';
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 
-import MiComponente from './components/MiComponente'; // Importa los componentes que usarás en las rutas
-
-createApp(App).mount('#app')
-Vue.config.productionTip = false; // muestra advertencias 
-
-Vue.use(VueRouter);
+import MiComponente from './components/MiComponente';
 
 
+//Definir rutas -- config
+const routes = [
+    { path: '/', component: MiComponente }
+]
+
+
+//Crear obj de rutas
 const router = createRouter({
-  history: createWebHistory(),
-  routes: [
-    { path: '/', component: MiComponente },
-    
-  ]
-});
+      history: createWebHashHistory(),
+      routes
+    });
 
-export default router;
+
+//Instancia de Vue
+const app = createApp(App);
+
+app.use(router);
+
+app.mount('#app');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import MiComponente from './components/MiComponente'; // Importa los componentes que usarás en las rutas
+
+// createApp(App).mount('#app')
+// Vue.config.productionTip = false; // muestra advertencias 
+
+// Vue.use(VueRouter);
+
+
+// const router = createRouter({
+//   history: createWebHistory(),
+//   routes: [
+//     { path: '/', component: MiComponente },
+    
+//   ]
+// });
+
+// export default router;
 
 
 // const routes = [
