@@ -1,23 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <MiComponente></MiComponente>
-
-  <!-- Se cargan los componentes que correspondan a la ruta -->
-  <router-view></router-view>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <h1>Página de inicio</h1>
+    <br />
+    <router-link to="/hello-world">Hello word</router-link>
+    <br />
+    <router-link to="/mi-componente">mi componente</router-link>
+    <br />
+    <router-link to="/prueba-componente">Componente Prueba</router-link>
+    
+    <!-- Se cargan los componentes que correspondan a la ruta -->
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import MiComponente from './components/MiComponente.vue';
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-    MiComponente
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
 <style>
