@@ -4,7 +4,7 @@
             Prueba componente
         </h1>
         <h1>
-            Prueba componente
+            Prueba componentes
         </h1>
         <h1>
             Prueba componente
