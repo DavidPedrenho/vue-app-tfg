@@ -7,6 +7,26 @@
 
 <script>
 
+
+////CONEXION CON EL BACKEND
+const url = 'http://localhost:4000/api/clientes';
+ console.log(connectFunction());
+async function connectFunction() {
+    try {
+        
+        const response = await fetch(url);
+        const data = await response.json();
+        controlMyData(data);
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
+function controlMyData(data) {
+    console.log(data);
+    console.log(data.json); // Si quieres acceder al cuerpo JSON, debes llamar a `json()` sin paréntesis.
+    return data.json;
+}
+
     export default{
         name: 'MiComponente', //Nombre de la etiqueta
 
