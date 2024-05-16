@@ -1,15 +1,19 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <h1>Página de inicio</h1>
+    <h1><router-link to="/">Home</router-link></h1>
+    
     <br />
     <router-link to="/hello-world">Hello word</router-link>
     <br />
     <router-link to="/mi-componente">mi componente</router-link>
     <br />
     <router-link to="/prueba-componente">Componente Prueba</router-link>
+    <br />
+    <router-link to="/jugador">Carta jugador</router-link>
+    <br />
 
-    <button class="btn btn-outline btn-success">Success</button>
+    
     
     <!-- Se cargan los componentes que correspondan a la ruta -->
     <router-view></router-view>

@@ -1,5 +1,7 @@
 <template>
     <div>
+
+        
         <h1>
             Prueba componente
         </h1>
