@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router';
+import './assets/index.css';
 
 //COMPONENTES
 import MiComponente from './components/MiComponente.vue';

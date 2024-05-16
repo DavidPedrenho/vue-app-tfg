@@ -8,6 +8,8 @@
     <router-link to="/mi-componente">mi componente</router-link>
     <br />
     <router-link to="/prueba-componente">Componente Prueba</router-link>
+
+    <button class="btn btn-outline btn-success">Success</button>
     
     <!-- Se cargan los componentes que correspondan a la ruta -->
     <router-view></router-view>
