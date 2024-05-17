@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+  
     <img alt="Vue logo" src="./assets/logo.png" />
     <h1><router-link to="/">Home</router-link></h1>
     
@@ -12,15 +13,18 @@
     <br />
     <router-link to="/jugador">Carta jugador</router-link>
     <br />
+    
 
     
     
-    <!-- Se cargan los componentes que correspondan a la ruta -->
+     
     <router-view></router-view>
+   
+    
   </div>
 </template>
 
-<script>
+<script >
 
 
 
@@ -28,6 +32,7 @@ export default {
   name: "App",
   components: {},
 };
+
 </script>
 
 <style>

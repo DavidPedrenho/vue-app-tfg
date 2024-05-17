@@ -6,7 +6,7 @@ import './assets/index.css';
 //COMPONENTES
 
 import PlayerComponent from './components/Player/Player-components.vue';
-
+import MyConnectDb from "./components/ConnectDataBase.vue"
 import MiComponente from './components/MiComponente.vue';
 import HelloWorld from './components/HelloWorld.vue';
 import PruebaComponent from './components/PruebaComponent.vue'; 
@@ -20,6 +20,8 @@ const routes = [
     { path: '/mi-componente', component: MiComponente },
     { path: '/hello-world', component: HelloWorld },
     { path: '/prueba-componente', component: PruebaComponent },
+
+    { path: '/connect-db', component: MyConnectDb },
 ]
 
 
