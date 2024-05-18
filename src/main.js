@@ -3,7 +3,7 @@ import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router';
 import './assets/index.css';
 
-//COMPONENTES
+///COMPONENTES
 
 import PlayerComponent from './components/Player/Player-components.vue';
 import MyConnectDb from "./components/ConnectDataBase.vue"
