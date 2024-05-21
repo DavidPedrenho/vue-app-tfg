@@ -7,7 +7,7 @@
 <script setup>
 
 const connectDataBase = async () => {
-    await fetch("http://localhost:4050/user")
+    await fetch("http://localhost:4051/user")
         .then(data => {
             data.json()
         })

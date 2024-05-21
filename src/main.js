@@ -3,13 +3,17 @@ import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router';
 import './assets/index.css';
 
+
+
+
+
 ///COMPONENTES
 
 import PlayerComponent from './components/Player/Player-components.vue';
-import MyConnectDb from "./components/ConnectDataBase.vue"
-import MiComponente from './components/MiComponente.vue';
-import HelloWorld from './components/HelloWorld.vue';
-import PruebaComponent from './components/PruebaComponent.vue'; 
+import MyConnectDb from "./components/pruebas/ConnectDataBase.vue"
+import MiComponente from './components/pruebas/MiComponente.vue';
+import HelloWorld from './components/pruebas/HelloWorld.vue';
+import PruebaComponent from './components/pruebas/PruebaComponent.vue'; 
 
 
 //Definir rutas -- config
@@ -33,8 +37,8 @@ const router = createRouter({
 
 
 //Instancia de Vue
-const app = createApp(App);
 
+const app = createApp(App)
 app.use(router);
 
 app.mount('#app');

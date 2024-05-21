@@ -1,79 +1,57 @@
 <template>
   <div>
-    <div class="card w-96 bg-base-100 shadow-xl">
+    <div class="card max-w-sm mx-auto w-96 border-4 shadow-slate-950 border-neutral bg-base-100 shadow-xl">
       <figure class="px-10 pt-10">
         <img
-          src="https://i.pinimg.com/236x/2a/2e/7f/2a2e7f0f60b750dfb36c15c268d0118d.jpg"
-          alt="Shoes"
-          class="rounded-xl"
-        />
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqhREmOESv8Q1TJ7Wwa38JHUSwVuk5v5EiAA&s"
+          alt="Shoes" class="border-4 border-neutral rounded-full" />
       </figure>
-      <div class="card-body items-center text-center">
-        <h2 class="card-title">MANOLO</h2>
-        <div class="">
-          <p>Nº de partidos: 3</p>
-          <p>MVP: -</p>
-        </div>
-
-        <div class="card-actions">
-          <div class="collapse bg-base-200">
-            <input type="checkbox" />
-            <div class="collapse-title text-xl font-medium">HABILIDADES</div>
-            <div class="collapse-content">
-              <ul>
-                <li>Físico: 45</li>
-                <li>Defensa: 89</li>
-                <li>Ataque: 63</li>
-                <li>Ritmo: 78</li>
-              </ul>
-            </div>
-          </div>
-          <div  class="join join-vertical lg:join-horizontal">
-            <button class="btn join-item bg-red-500 text-white">EQUIPO 1</button>
-            <button class="btn join-item  bg-blue-500 text-white">EQUIPO 2</button>
-          </div>
-        </div>
+      <div class="p-4">
+        <h1 class="font-sans font-bold block mt-1 text-3xl leading-tight text-white">
+          Componente_21
+        </h1>
       </div>
+
+      <div class="items-center text-center  my-1" >
+        <span class="mx-3 justify-center" >
+          Nº Partidos: 4
+        </span>
+        
+        <span class="mx-3 justify-center">
+          MVP: 8
+        </span>
+      </div>
+
+
+      <div class="  join  lg:join-horizontal flex-auto flex justify-center">
+
+        <button class="btn tracking-wide w-1/2 join-item bg-red-400 hover:bg-red-500 text-base-200 font-extrabold py-2 px-4 ">
+          EQUIPO ROJO
+        </button>
+        <button class=" btn tracking-wide w-1/2 join-item bg-blue-500 hover:bg-blue-600 text-base-300 font-extrabold py-2 px-4 ">
+          EQUIPO AZUL
+        </button>
+
+        
+      </div>
+
+      
     </div>
+
+
+    <br>
+    <br>
+
+    
   </div>
 </template>
 
 
 
 <script>
+//GRAFICO DE RADAR(CLIP-PATH)
 </script>
 
- 
-
-<style>
-.card {
-  border: 3px solid;
-  border-radius: 5px;
-  width: 25%;
-}
-
-.card-title {
-  color: secondary;
-}
-
-.collapse {
-  border: 3px solid;
-  border-radius: 5px;
-  border-color: rgb(93, 193, 70);
-}
-
-.collapse-content {
-  background-color: rgb(93, 193, 70);
-}
-
-/* BOTONES EQUIPOS */
-
-.join{
-
-  display: flex !important;
-  justify-content: center !important;
-
-}
 
 
-</style>
+<style></style>
