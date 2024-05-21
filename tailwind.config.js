@@ -6,7 +6,6 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Poppins', 'Quicksand', 'Nunito', 'sans-serif'],
-        // Puedes añadir más fuentes aquí
       },
     },
   },
@@ -16,11 +15,12 @@ module.exports = {
     themes: [
       {
       mytheme: {
-        "primary": "#a991f7",
-        "secondary": "#9EDE43",
-        "accent": "#D85251",
+        "primary": "#1C82AD",
+        "secondary": "#03C988",
+        "accent": "#FFC374",
         "neutral": "#3d4451",
-        "base-100": "#2A303C",
+        "base-100": "#16213E",
+        "base-102": "#2A303C",
       },
     },
       "dim",
