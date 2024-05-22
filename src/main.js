@@ -10,16 +10,20 @@ import './assets/index.css';
 ///COMPONENTES
 
 import PlayerComponent from './components/Player/Player-components.vue';
-import MyConnectDb from "./components/pruebas/ConnectDataBase.vue"
+import DiagramaHexComponent from './components/Player/DiagramaHex-components.vue';
+
+import MyConnectDb from './components/pruebas/ConnectDataBase.vue';
 import MiComponente from './components/pruebas/MiComponente.vue';
 import HelloWorld from './components/pruebas/HelloWorld.vue';
 import PruebaComponent from './components/pruebas/PruebaComponent.vue'; 
+
 
 
 //Definir rutas -- config
 const routes = [
 
     { path: '/jugador', component: PlayerComponent },
+    { path: '/hexagono', component: DiagramaHexComponent },
 
     { path: '/mi-componente', component: MiComponente },
     { path: '/hello-world', component: HelloWorld },

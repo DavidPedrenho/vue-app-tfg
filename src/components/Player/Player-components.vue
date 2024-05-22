@@ -43,7 +43,7 @@
 
       <div class="join  flex-auto flex justify-center rounded-none border-t-8 border-neutral">
         <button
-          class="btn rounded-bl-lg rounded-s-none tracking-wide w-1/2 join-item text-sm bg-secondary hover:bg-red-500 text-base-200 font-extrabold py-4 px-4">
+          class="btn rounded-bl-lg rounded-s-none tracking-wide w-1/2 join-item text-sm bg-secondary hover:bg-green-600 text-base-200 font-extrabold py-4 px-4">
           EQUIPO ROJO
         </button>
         <button
@@ -86,4 +86,9 @@
 
 
 
-<style></style>
+<style>
+  .border-neutral {
+    --tw-border-opacity: 0.3;
+    border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity)));
+}
+</style>

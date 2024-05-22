@@ -4,7 +4,7 @@
     
     <h1><router-link to="/">Home</router-link></h1>
     
-    <br />
+    <!-- <br />
     <router-link to="/hello-world">Hello word</router-link>
     <br />
     <router-link to="/mi-componente">mi componente</router-link>
@@ -12,7 +12,7 @@
     <router-link to="/prueba-componente">Componente Prueba</router-link>
     <br />
     <router-link to="/jugador">Carta jugador</router-link>
-    <br />
+    <br /> -->
     
 
     
