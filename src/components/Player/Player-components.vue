@@ -9,7 +9,7 @@
       </figure>
       <div class="pt-4">
         <h1 class="font-sans font-bold block mt-1 text-3xl leading-tight text-white">
-          Componente_21
+          COMPO_21
         </h1>
       </div>
 
@@ -44,7 +44,7 @@
       <div class="join  flex-auto flex justify-center rounded-none border-t-8 border-neutral">
         <button
           class="btn rounded-bl-lg rounded-s-none tracking-wide w-1/2 join-item text-sm bg-secondary hover:bg-green-600 text-base-200 font-extrabold py-4 px-4">
-          EQUIPO ROJO
+          LOCAL
         </button>
         <button
           class=" btn mb-0.5 mr-0.4 rounded-br-lg border-l-2 rounded-r-none tracking-wide w-1/2 join-item text-sm bg-primary hover:bg-blue-600 text-base-300 font-extrabold py-4 px-4">

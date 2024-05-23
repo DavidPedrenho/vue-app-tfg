@@ -11,6 +11,7 @@ import './assets/index.css';
 
 import PlayerComponent from './components/Player/Player-components.vue';
 import DiagramaHexComponent from './components/Player/DiagramaHex-components.vue';
+import CreateTeamsComponent from './components/Teams/CreateTeams-components.vue';
 
 import MyConnectDb from './components/pruebas/ConnectDataBase.vue';
 import MiComponente from './components/pruebas/MiComponente.vue';
@@ -24,6 +25,7 @@ const routes = [
 
     { path: '/jugador', component: PlayerComponent },
     { path: '/hexagono', component: DiagramaHexComponent },
+    { path: '/crear-equipos', component: CreateTeamsComponent },
 
     { path: '/mi-componente', component: MiComponente },
     { path: '/hello-world', component: HelloWorld },

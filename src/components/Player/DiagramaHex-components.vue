@@ -2,6 +2,8 @@
     <div>
 
 
+
+     <!-- HEXAGONO -->
         <VueApexCharts type="radar" :options="chartOptions" :series="series"></VueApexCharts>
 
     </div>
@@ -52,9 +54,9 @@ export default {
                     categories: ['RIT', 'TIR', 'PAS', 'REG', 'DEF', 'FIS'],
                     labels: {
                         style: {
-                            color: 'red', 
-                            fontSize: '10px', 
-                            
+                            color: 'red',
+                            fontSize: '10px',
+
                         }
                     }
                 },
@@ -63,7 +65,7 @@ export default {
 
                 },
                 fill: {
-                    
+
                 },
             },
         };
@@ -75,5 +77,6 @@ console.log(VueApexCharts)
 
 
 <style>
+
 
 </style>

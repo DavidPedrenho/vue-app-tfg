@@ -2,7 +2,7 @@
   <div id="app">
   
     
-    <h1><router-link to="/">Home</router-link></h1>
+    <!-- <h1><router-link to="/">Home</router-link></h1> -->
     
     <!-- <br />
     <router-link to="/hello-world">Hello word</router-link>
