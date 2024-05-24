@@ -53,9 +53,12 @@
 
         </div> -->
 
-        <div class="flex max-w-4xl mx-auto justify-center">
+        <div class="flex flex-col lg:flex-row max-w-4xl mx-auto justify-center sm:space-x-6  lg:space-x-16">
 
-            <div role="tablist" class="tabs tabs-lifted">
+            
+
+            <div class="w-1/2 ">
+                <div role="tablist" class="tabs tabs-lifted ">
                 <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="Tab 1" />
                 <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">Tab content 1</div>
 
@@ -68,8 +71,9 @@
                 <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="Tab 3" />
                 <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">Tab content 3</div>
             </div>
+            </div>
 
-            <div>
+            <div class="w-1/2">
                 <input type="radio" name="radio-5" class="radio radio-success" checked />
                 <input type="radio" name="radio-5" class="radio radio-success" />
             </div>
