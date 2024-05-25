@@ -72,6 +72,7 @@
             </div>
 
 
+            <!-- Medias visitante -->
 
             <div class="w-1/2">
 
