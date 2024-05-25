@@ -44,24 +44,28 @@
                 <div class=" join inline-flex w-full gap-2 sm:my-0 my-1 sm:justify-center ">
 
                     <div>
-                        <button  v-on:click="toggleActive('button1')" class="btn join-item btn-secondary ">Físico</button>
-                        <p v-if= "activeButtons.button1" class="mt-1 text-gray-400">M: 87</p>
+                        <button v-on:click="toggleActive('button1')"
+                            class="btn join-item btn-secondary ">Físico</button>
+                        <p v-if="activeButtons.button1" class="mt-1 text-gray-400">M: 87</p>
                     </div>
 
                     <div>
-                        <button v-on:click="toggleActive('button2')" class="btn join-item btn-secondary ">Defensivo</button>
-                        <p v-if= "activeButtons.button2" class="mt-1 text-gray-400">M: 74</p>
+                        <button v-on:click="toggleActive('button2')"
+                            class="btn join-item btn-secondary ">Defensivo</button>
+                        <p v-if="activeButtons.button2" class="mt-1 text-gray-400">M: 74</p>
                     </div>
                     <div>
-                        <button v-on:click="toggleActive('button3')" class="btn join-item btn-secondary ">Ofensivo</button>
-                        <p v-if= "activeButtons.button3" class="mt-1 text-gray-400">M: 63</p>
+                        <button v-on:click="toggleActive('button3')"
+                            class="btn join-item btn-secondary ">Ofensivo</button>
+                        <p v-if="activeButtons.button3" class="mt-1 text-gray-400">M: 63</p>
                     </div>
                     <div>
-                        <button v-on:click="toggleActive('button4')" class="btn join-item btn-secondary ">Táctico</button>
-                        <p v-if= "activeButtons.button4" class="mt-1 text-gray-400">M: 79</p>
+                        <button v-on:click="toggleActive('button4')"
+                            class="btn join-item btn-secondary ">Táctico</button>
+                        <p v-if="activeButtons.button4" class="mt-1 text-gray-400">M: 79</p>
                     </div>
-                    
-                    
+
+
 
                 </div>
 
@@ -71,12 +75,32 @@
 
             <div class="w-1/2">
 
-                <div class=" join inline-flex w-full gap-2 sm:my-0 my-1 ">
 
-                    <button class="btn join-item btn-primary flex-1">Físico</button>
-                    <button class="btn join-item btn-primary flex-1">Defensivo</button>
-                    <button class="btn join-item btn-primary flex-1">Ofensivo</button>
-                    <button class="btn join-item btn-primary flex-1">Táctico</button>
+                <div class=" join inline-flex w-full gap-2 sm:my-0 my-1 sm:justify-center ">
+
+                    <div>
+                        <button v-on:click="toggleActive('button1v')"
+                            class="btn join-item btn-primary">Físico</button>
+                        <p v-if="activeButtons.button1" class="mt-1 text-gray-400">M: 87</p>
+                    </div>
+
+                    <div>
+                        <button v-on:click="toggleActive('button2v')"
+                            class="btn join-item btn-primary ">Defensivo</button>
+                        <p v-if="activeButtons.button2" class="mt-1 text-gray-400">M: 74</p>
+                    </div>
+                    <div>
+                        <button v-on:click="toggleActive('button3v')"
+                            class="btn join-item btn-primary ">Ofensivo</button>
+                        <p v-if="activeButtons.button3" class="mt-1 text-gray-400">M: 63</p>
+                    </div>
+                    <div>
+                        <button v-on:click="toggleActive('button4v')"
+                            class="btn join-item btn-primary">Táctico</button>
+                        <p v-if="activeButtons.button4" class="mt-1 text-gray-400">M: 79</p>
+                    </div>
+
+
 
                 </div>
 
@@ -96,31 +120,31 @@
 
 
 export default {
-  name: 'CreateTeamsComponent',
-  data() {
-    return {
-        activeButtons: {
-        button1: false,
-        button2: false,
-        button3: false,
-        button4: false,
-      }
-    };
-  },
-  methods: {
-    
-      
-    toggleActive(button) {
-         // Desactivar todos los botones
-      for (let key in this.activeButtons) {
-        this.activeButtons[key] = false;
-      }
-      // Activar solo el botón clicado
-      this.activeButtons[button] = true;
+    name: 'CreateTeamsComponent',
+    data() {
+        return {
+            activeButtons: {
+                button1: false,
+                button2: false,
+                button3: false,
+                button4: false,
+            }
+        };
+    },
+    methods: {
+
+
+        toggleActive(button) {
+            // Desactivar todos los botones
+            for (let key in this.activeButtons) {
+                this.activeButtons[key] = false;
+            }
+            // Activar solo el botón clicado
+            this.activeButtons[button] = true;
+        }
+
+
     }
-    
-    
-  }
 };
 
 
