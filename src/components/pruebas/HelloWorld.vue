@@ -4,6 +4,21 @@
     <h2>{{ texto }}</h2>
     
     <MiComponente></MiComponente>
+
+    <div
+                class="grid flex-grow justify-center items-center h-32 card bg-base-300 border-4 border-secondary rounded-box flex-1">
+                
+                <h2 class="font-sans mt-2 font-bold block text-l leading-tight text-secondary">
+                    LOCAL
+                </h2>
+                <div>
+                    <span>Pepe</span>
+                    <span>Pepe</span>
+                    <span>Pepe</span>
+                </div>
+                
+            </div>
+
   </div>
 </template>
 

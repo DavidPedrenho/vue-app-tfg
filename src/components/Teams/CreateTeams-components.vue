@@ -2,27 +2,59 @@
     <div>
         <!-- DIVISOR EQUIPOS -->
 
-        <div class="flex flex-col lg:flex-row max-w-4xl mx-auto">
+        <div class="flex flex-col md:space-x-6 lg:flex-row max-w-4xl w-full  mx-auto">
             <div
-                class="grid flex-grow justify-center items-center h-32 card bg-base-300 border-4 border-secondary rounded-box flex-1">
-                <h2 class="font-sans mt-2 font-bold block text-l leading-tight text-secondary">
-                    LOCAL
-                </h2>
-                <span>Pepe</span>
-                <span>Pepe</span>
-                <span>Pepe</span>
+                class="flex md:w-1/2 bg-base-300 border-4 border-secondary rounded-box pb-1">
+
+                <div class="grid w-full grid-cols-2">
+
+                    <div class="flex items-center justify-center row-span-2">
+                        <h2 class="grid font-sans  mt-4 font-bold text-2xl text-secondary">LOCAL</h2>
+                    </div>
+
+                    <div class="grid m-4 row-span-2 text-6xl ">73</div>
+
+                    <div class="grid  grid-cols-2 row-start-3 col-span-2 m-2 text-xl gap-y-2">
+                        <span>Pepillos truck</span>
+                        <span>Pepillos truck</span>
+                        <span>Pepillos truck</span>
+                        <span>Pepillos truck</span>
+                        <span>Pepillos truck</span>
+                        <span>Pepillos truck</span>
+                        
+                    </div>
+
+                </div>
+
+
             </div>
 
-            <div class="divider lg:divider-horizontal">VS</div>
+            <div class="divider lg:divider-horizontal text-xl">VS</div>
 
             <div
-                class="grid flex-grow justify-center items-center h-32 card bg-base-300 border-4 border-primary rounded-box flex-1">
-                <h2 class="font-sans mt-2 font-bold block text-l leading-tight text-primary">
-                    VISITANTE
-                </h2>
-                <span>Juan</span>
-                <span>Juan</span>
-                <span>Juan</span>
+                class="flex md:w-1/2 bg-base-300 border-4 border-primary rounded-box pb-1">
+
+                <div class="grid w-full grid-cols-2">
+
+                    <div class="flex items-center justify-center row-span-2">
+                        <h2 class="grid font-sans  mt-4 font-bold text-2xl text-primary">VISITANTE</h2>
+                    </div>
+
+                    <div class="grid m-4 row-span-2 text-6xl ">85</div>
+
+                    <div class="grid  grid-cols-2 row-start-3 col-span-2 m-2 text-xl gap-y-2">
+                        <span>Juanillos truck</span>
+                        <span>Juanillos truck</span>
+                        <span>Juanillos truck</span>
+                        <span>Juanillos truck</span>
+                        <span>Juanillos truck</span>
+                        <span>Juanillos truck</span>
+                        
+                    </div>
+
+                </div>
+
+
             </div>
 
 
@@ -44,24 +76,24 @@
                 <div class=" join inline-flex w-full gap-2 sm:my-0 my-1 sm:justify-center ">
 
                     <div>
-                        <button v-on:click="toggleActiveLocal('button1')"
-                            class="btn join-item btn-secondary ">Físico</button>
+                        <button v-on:click="toggleActiveLocal('button1')" class="btn join-item"
+                            :class="[activeButtonsLocal.button1 ? 'btn-accent' : 'btn-secondary']">Físico</button>
                         <p v-if="activeButtonsLocal.button1" class="mt-1 text-gray-400">M: 87</p>
                     </div>
 
                     <div>
-                        <button v-on:click="toggleActiveLocal('button2')"
-                            class="btn join-item btn-secondary ">Defensivo</button>
+                        <button v-on:click="toggleActiveLocal('button2')" class="btn join-item"
+                            :class="[activeButtonsLocal.button2 ? 'btn-accent' : 'btn-secondary']">Defensivo</button>
                         <p v-if="activeButtonsLocal.button2" class="mt-1 text-gray-400">M: 74</p>
                     </div>
                     <div>
-                        <button v-on:click="toggleActiveLocal('button3')"
-                            class="btn join-item btn-secondary ">Ofensivo</button>
+                        <button v-on:click="toggleActiveLocal('button3')" class="btn join-item"
+                            :class="[activeButtonsLocal.button3 ? 'btn-accent' : 'btn-secondary']">Ofensivo</button>
                         <p v-if="activeButtonsLocal.button3" class="mt-1 text-gray-400">M: 63</p>
                     </div>
                     <div>
-                        <button v-on:click="toggleActiveLocal('button4')"
-                            class="btn join-item btn-secondary ">Táctico</button>
+                        <button v-on:click="toggleActiveLocal('button4')" class="btn join-item"
+                            :class="[activeButtonsLocal.button4 ? 'btn-accent' : 'btn-secondary']">Táctico</button>
                         <p v-if="activeButtonsLocal.button4" class="mt-1 text-gray-400">M: 79</p>
                     </div>
 
@@ -80,24 +112,24 @@
                 <div class=" join inline-flex w-full gap-2 sm:my-0 my-1 sm:justify-center ">
 
                     <div>
-                        <button v-on:click="toggleActiveVisitante('button1v')"
-                            class="btn join-item btn-primary">Físico</button>
+                        <button v-on:click="toggleActiveVisitante('button1v')" class="btn join-item"
+                            :class="[activeButtonsVisitante.button1v ? 'btn-accent' : 'btn-primary']">Físico</button>
                         <p v-if="activeButtonsVisitante.button1v" class="mt-1 text-gray-400">M: 87</p>
                     </div>
 
                     <div>
-                        <button v-on:click="toggleActiveVisitante('button2v')"
-                            class="btn join-item btn-primary ">Defensivo</button>
+                        <button v-on:click="toggleActiveVisitante('button2v')" class="btn join-item"
+                            :class="[activeButtonsVisitante.button2v ? 'btn-accent' : 'btn-primary']">Defensivo</button>
                         <p v-if="activeButtonsVisitante.button2v" class="mt-1 text-gray-400">M: 74</p>
                     </div>
                     <div>
-                        <button v-on:click="toggleActiveVisitante('button3v')"
-                            class="btn join-item btn-primary ">Ofensivo</button>
+                        <button v-on:click="toggleActiveVisitante('button3v')" class="btn join-item"
+                            :class="[activeButtonsVisitante.button3v ? 'btn-accent' : 'btn-primary']">Ofensivo</button>
                         <p v-if="activeButtonsVisitante.button3v" class="mt-1 text-gray-400">M: 63</p>
                     </div>
                     <div>
-                        <button v-on:click="toggleActiveVisitante('button4v')"
-                            class="btn join-item btn-primary">Táctico</button>
+                        <button v-on:click="toggleActiveVisitante('button4v')" class="btn join-item"
+                            :class="[activeButtonsVisitante.button4v ? 'btn-accent' : 'btn-primary']">Táctico</button>
                         <p v-if="activeButtonsVisitante.button4v" class="mt-1 text-gray-400">M: 79</p>
                     </div>
 
