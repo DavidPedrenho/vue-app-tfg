@@ -12,15 +12,15 @@
                         <h2 class="grid font-sans  mt-4 font-bold text-2xl text-secondary">LOCAL</h2>
                     </div>
 
-                    <div class="grid m-4 row-span-2 text-6xl ">73</div>
+                    <div class="grid m-4 row-span-2 text-6xl text-gray-400">73</div>
 
-                    <div class="grid  grid-cols-2 row-start-3 col-span-2 m-2 text-xl gap-y-2">
-                        <span>Pepillos truck</span>
-                        <span>Pepillos truck</span>
-                        <span>Pepillos truck</span>
-                        <span>Pepillos truck</span>
-                        <span>Pepillos truck</span>
-                        <span>Pepillos truck</span>
+                    <div class="grid  grid-cols-2 row-start-3 col-span-2 mb-4 text-xl gap-y-2 text-gray-500">
+                        <span>Pepillos_truck</span>
+                        <span>Pepillos_truck</span>
+                        <span>Pepillos_truck</span>
+                        <span>Pepillos_truck</span>
+                        <span>Pepillos_truck</span>
+                        <span>Pepillos_truck</span>
                         
                     </div>
 
@@ -40,15 +40,15 @@
                         <h2 class="grid font-sans  mt-4 font-bold text-2xl text-primary">VISITANTE</h2>
                     </div>
 
-                    <div class="grid m-4 row-span-2 text-6xl ">85</div>
+                    <div class="grid m-4 row-span-2 text-6xl text-gray-400">85</div>
 
-                    <div class="grid  grid-cols-2 row-start-3 col-span-2 m-2 text-xl gap-y-2">
-                        <span>Juanillos truck</span>
-                        <span>Juanillos truck</span>
-                        <span>Juanillos truck</span>
-                        <span>Juanillos truck</span>
-                        <span>Juanillos truck</span>
-                        <span>Juanillos truck</span>
+                    <div class="grid  grid-cols-2 row-start-3 mb-4 col-span-2 m-2 text-xl gap-y-2 text-gray-500">
+                        <span>Juanillos_truck</span>
+                        <span>Juanillos_truck</span>
+                        <span>Juanillos_truck</span>
+                        <span>Juanillos_truck</span>
+                        <span>Juanillos_truck</span>
+                        <span>Juanillos_truck</span>
                         
                     </div>
 
@@ -70,10 +70,10 @@
 
 
 
-            <div class="w-1/2">
+            <div class="w-1/2 ">
 
 
-                <div class=" join inline-flex w-full gap-2 sm:my-0 my-1 sm:justify-center ">
+                <div class="join inline-flex w-full gap-1 sm:my-0 my-1 sm:justify-center ">
 
                     <div>
                         <button v-on:click="toggleActiveLocal('button1')" class="btn join-item"
@@ -109,7 +109,7 @@
             <div class="w-1/2">
 
 
-                <div class=" join inline-flex w-full gap-2 sm:my-0 my-1 sm:justify-center ">
+                <div class=" join inline-flex w-full gap-1 sm:my-0 my-1 sm:justify-center ">
 
                     <div>
                         <button v-on:click="toggleActiveVisitante('button1v')" class="btn join-item"
