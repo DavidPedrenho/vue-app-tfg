@@ -86,15 +86,39 @@
             </div>
           </div>
 
-          <!-- PROBANDO HABILIDADES -->
+          <!--  HABILIDADES -->
 
           <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-200">
             <input type="checkbox" class="peer" /> 
-            <div class="collapse-title text-xl font-medium text-gray-500">
+            <div class="collapse-title text-xl font-medium text-gray-400">
               Habilidades
             </div>
-            <div class="collapse-content">
-              <p>tabindex="0" attribute is necessary to make the div focusable</p>
+            <div class="collapse-content grid  grid-cols-3 grid-rows-2 grid-flow-col gap-4 text-gray-500">
+              <div >
+                <p class="font-bold text-gray-400">RIT</p>
+                <p >80</p>
+              </div>
+              <div >
+                <p class="font-bold text-gray-400">TIR</p>
+                <p >63</p>
+              </div>
+              <div >
+                <p class="font-bold text-gray-400">PAS</p>
+                <p >81</p>
+              </div>
+              <div >
+                <p class="font-bold text-gray-400">REG</p>
+                <p >79</p>
+              </div>
+              <div >
+                <p class="font-bold text-gray-400">DEF</p>
+                <p >87</p>
+              </div>
+              <div >
+                <p class="font-bold text-gray-400">FIS</p>
+                <p >72</p>
+              </div>
+
             </div>
           </div>
 
