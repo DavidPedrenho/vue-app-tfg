@@ -8,7 +8,7 @@
                 <div class="card-body gap-5">
                     <div>
                        
-                        <div class="flex flex-wrap items-center gap-1">
+                        <div class="flex flex-wrap items-center gap-2 ">
                             <div class="badge badge-secondary font-sans p-3">14/05/24</div>
                             <div class="badge badge-primary font-sans p-3">Pabellón Mun. de La Unión</div>
                             <div class="badge badge-secondary font-sans p-3">20:00 p.m.</div>
@@ -21,13 +21,13 @@
 
                     <div tabindex="0" class="collapse collapse-arrow mt-3 border border-base-300 bg-base-200">
                         <input type="checkbox" class="peer" />
-                        <div class="collapse-title text-xl font-sans text-gray-400">
+                        <div class="collapse-title text-xl text-left ml-1 font-sans text-gray-400">
                             Jugadores
                         </div>
-                        <div class="collapse-content  gap-4 text-gray-500">
+                        <div class="collapse-content  gap-3  text-gray-500">
 
 
-                            <div class="grid grid-cols-2 font-sans text-sm p-4 gap-4 text-secondary text-opacity-55 m-2 w-full">
+                            <div class="grid grid-cols-2 font-sans text-sm py-4 gap-3 text-secondary text-opacity-55 mr-2 w-full">
                                 <span>Juanillos_truck1</span>
                                 <span>Juanillos_truck2</span>
                                 <span>Juanillos_truck3</span>
@@ -39,7 +39,7 @@
                             </div>
 
                             <div
-                                class="grid grid-cols-2 font-sans text-sm p-4 gap-4 text-primary text-opacity-80 border-t-2 border-opacity-5 border-white m-2 w-full">
+                                class="grid grid-cols-2 font-sans text-sm py-4 gap-3 text-primary text-opacity-80 border-t-2 border-opacity-5 border-white mr-2 w-full">
                                 <span>Juanillos_truck1</span>
                                 <span>Juanillos_truck2</span>
                                 <span>Juanillos_truck3</span>
@@ -57,7 +57,7 @@
 
                     <!-- COMENTARIOS -->
                     <div>
-                        <h2 class="card-title text-2xl my-3 font-sans text-gray-400 ">
+                        <h2 class="card-title text-xl my-3 font-sans text-gray-400 ">
                             Comentarios:
                         </h2>
 

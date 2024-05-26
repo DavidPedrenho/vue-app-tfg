@@ -14,7 +14,7 @@
 
                     <div class="grid m-4 row-span-2 text-6xl text-gray-400">73</div>
 
-                    <div class="grid  grid-cols-2 row-start-3 col-span-2 mb-4 text-xl gap-y-2 text-gray-500">
+                    <div class="grid  grid-cols-2 row-start-3 col-span-2 mb-4 sm:text-xl gap-y-2 text-gray-500">
                         <span>Pepillos_truck</span>
                         <span>Pepillos_truck</span>
                         <span>Pepillos_truck</span>
@@ -45,7 +45,7 @@
 
                     <div class="grid m-4 row-span-2 text-6xl text-gray-400">85</div>
 
-                    <div class="grid  grid-cols-2 row-start-3 mb-4 col-span-2 m-2 text-xl gap-y-2 text-gray-500">
+                    <div class="grid  grid-cols-2 row-start-3 mb-4 col-span-2 m-2 sm:text-xl gap-y-2 text-gray-500">
                         <span>Juanillos_truck</span>
                         <span>Juanillos_truck</span>
                         <span>Juanillos_truck</span>

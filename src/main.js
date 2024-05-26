@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { createApp } from 'vue';
 import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router';
@@ -11,8 +13,13 @@ import './assets/index.css';
 
 import PlayerComponent from './components/Player/Player-components.vue';
 import DiagramaHexComponent from './components/Player/DiagramaHex-components.vue';
+import SkillsComponent from './components/Player/skillsProfile-components.vue';
+
 import CreateTeamsComponent from './components/Teams/CreateTeams-components.vue';
+
 import MatchComponent from './components/Match/Match-components.vue';
+
+
 
 import MyConnectDb from './components/pruebas/ConnectDataBase.vue';
 import MiComponente from './components/pruebas/MiComponente.vue';
@@ -26,8 +33,11 @@ const routes = [
 
     { path: '/jugador', component: PlayerComponent },
     { path: '/hexagono', component: DiagramaHexComponent },
+    { path: '/skills', component: SkillsComponent },
+
     { path: '/crear-equipos', component: CreateTeamsComponent },
     { path: '/partido', component: MatchComponent },
+
 
     { path: '/mi-componente', component: MiComponente },
     { path: '/hello-world', component: HelloWorld },
