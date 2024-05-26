@@ -20,7 +20,7 @@ module.exports = {
         "checkedLocal": "#08aa74",
         "accent": "#e5e089",
         "neutral": "#3d4451",
-        "base-100": "#16213E",
+        "base-100": "#101931",
         "base-102": "#2A303C",
       },
     },
