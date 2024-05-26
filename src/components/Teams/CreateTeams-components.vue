@@ -31,6 +31,9 @@
 
             <div class="divider lg:divider-horizontal text-xl">VS</div>
 
+
+
+            <!-- VISITANTE -->
             <div
                 class="flex md:w-1/2 bg-base-300 border-4 border-primary rounded-box pb-1">
 
@@ -64,6 +67,8 @@
         </div>
 
         <!-- MEDIAS EQUIPOS -->
+
+        <!-- Medias Local Button -->
 
 
         <div class="flex flex-col lg:flex-row max-w-4xl mx-auto sm:space-x-12 mt-4">
@@ -104,7 +109,7 @@
             </div>
 
 
-            <!-- Medias visitante -->
+            <!-- Medias visitante Button -->
 
             <div class="w-1/2">
 

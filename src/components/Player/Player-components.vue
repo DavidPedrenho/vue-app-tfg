@@ -81,8 +81,8 @@
               Mi componente
             </h2>
             <div class="flex flex-row items-center gap-2">
-              <div class="badge badge-secondary">Nº de partidos: 32</div>
-              <div class="badge badge-secondary">MVP: 6</div>
+              <div class="badge badge-secondary p-3">Nº de partidos: 32</div>
+              <div class="badge badge-secondary p-3">MVP: 6</div>
             </div>
           </div>
 
@@ -125,8 +125,8 @@
 
 
           <div class="flex flex-row gap-2 justify-end w-full">
-            <button class="btn  btn-primary w-1/4">Local</button>
-            <button class="btn btn-secondary w-1/4">Visitante</button>
+            <button class="btn  btn-secondary w-1/4">Local</button>
+            <button class="btn btn-primary w-1/4">Visitante</button>
           </div>
         </div>
       </div>
