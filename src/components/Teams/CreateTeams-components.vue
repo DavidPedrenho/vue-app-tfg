@@ -2,7 +2,7 @@
     <div>
         <!-- DIVISOR EQUIPOS -->
 
-        <div class="flex flex-col md:space-x-6 lg:flex-row max-w-4xl w-full  mx-auto">
+        <div class="flex flex-col md:space-x-6 lg:flex-row max-w-4xl w-full font-sans mx-auto">
             <div
                 class="flex md:w-1/2 bg-base-300 border-4 border-secondary rounded-box pb-1">
 
@@ -68,12 +68,12 @@
 
         <!-- MEDIAS EQUIPOS -->
 
+        
+
+
+        <div class="flex flex-col lg:flex-row max-w-4xl mx-auto  space-y-1 sm:space-x-12 mt-4 font-sans">
+
         <!-- Medias Local Button -->
-
-
-        <div class="flex flex-col lg:flex-row max-w-4xl mx-auto  space-y-2 sm:space-x-12 mt-4">
-
-
 
             <div class="sm:w-1/2 ">
 
