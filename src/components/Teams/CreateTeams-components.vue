@@ -4,7 +4,7 @@
 
         <div class="flex flex-col md:space-x-6 lg:flex-row max-w-4xl w-full font-sans mx-auto">
             <div
-                class="flex md:w-1/2 bg-base-300 border-4 border-secondary rounded-box pb-1">
+                class="flex md:w-1/2 bg-base-300 rounded-box pb-1">
 
                 <div class="grid w-full grid-cols-2">
 
@@ -12,7 +12,7 @@
                         <h2 class="grid font-sans  mt-4 font-bold text-2xl text-secondary">LOCAL</h2>
                     </div>
 
-                    <div class="grid m-4 row-span-2 text-6xl text-gray-400">73</div>
+                    <div class="grid m-4 row-span-2 text-6xl text-secondary">73</div>
 
                     <div class="grid  grid-cols-2 row-start-3 col-span-2 mb-4 sm:text-xl gap-y-2 text-gray-500">
                         <span>Pepillos_truck</span>
@@ -35,7 +35,7 @@
 
             <!-- VISITANTE -->
             <div
-                class="flex md:w-1/2 bg-base-300 border-4 border-primary rounded-box pb-1">
+                class="flex md:w-1/2 bg-base-300 rounded-box pb-1">
 
                 <div class="grid w-full grid-cols-2">
 
@@ -43,7 +43,7 @@
                         <h2 class="grid font-sans  mt-4 font-bold text-2xl text-primary">VISITANTE</h2>
                     </div>
 
-                    <div class="grid m-4 row-span-2 text-6xl text-gray-400">85</div>
+                    <div class="grid m-4 row-span-2 text-6xl text-primary">85</div>
 
                     <div class="grid  grid-cols-2 row-start-3 mb-4 col-span-2 m-2 sm:text-xl gap-y-2 text-gray-500">
                         <span>Juanillos_truck</span>
@@ -71,9 +71,9 @@
         
 
 
-        <div class="flex flex-col lg:flex-row max-w-4xl mx-auto  space-y-1 sm:space-x-12 mt-4 font-sans">
+        <div class="flex flex-col lg:flex-row max-w-4xl mx-auto sm:space-y-0 space-y-2 sm:space-x-12 mt-6 font-sans">
 
-        <!-- Medias Local Button -->
+            <!-- Medias Local Button -->
 
             <div class="sm:w-1/2 ">
 
