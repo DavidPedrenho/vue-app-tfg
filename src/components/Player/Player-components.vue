@@ -14,7 +14,7 @@
         </figure>
         <div class="card-body gap-5">
           <div>
-            <h2 class="card-title font-sans text-2xl mb-2 text-gray-300">
+            <h2 class="card-title font-sans text-2xl ml-1 mb-2 text-gray-300">
               Mi componente
             </h2>
             <div class="flex flex-row items-center gap-2">
@@ -27,7 +27,7 @@
 
           <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-200">
             <input type="checkbox" class="peer" /> 
-            <div class="collapse-title text-xl font-sans text-gray-400">
+            <div class="collapse-title text-xl text-left ml-1 font-sans text-gray-400">
               Habilidades
             </div>
             <div class="collapse-content grid  grid-cols-3 grid-rows-2 grid-flow-col gap-4 font-sans text-gray-500">

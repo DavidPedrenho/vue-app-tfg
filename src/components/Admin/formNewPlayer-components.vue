@@ -1,53 +1,35 @@
 <template>
 
-    <!-- <div id="app" class="max-w-md mx-auto">
-        <label for="rangeInput" class="block mb-2 text-lg font-medium text-gray-700">Selecciona un valor:</label>
-        <input type="range" id="rangeInput" min="0" max="100" v-model="rangeValue"
-            class="range range-sm range-primary w-full">
-        <p class="mt-4">Valor seleccionado: {{ rangeValue }}</p>
-    </div> -->
-
-
-    <!-- --------------------------- -->
-
-
     <div v-for="(category, categoryName) in habilidades" :key="categoryName" class="card w-96 mb-8">
 
         <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-200">
-        <input type="checkbox" class="peer" />
+            <input type="checkbox" class="peer" />
 
-            <div class="grid grid-row-2 font-sans text-sm collapse-title text-l">
+            <div class="font-sans text-sm collapse-title text-l">
 
                 <div class="flex place-content-between mx-3 tracking-wider">
                     <div class="card-title text-xl text-gray-300">{{ categoryName }}</div>
-                    <div class="card-title text-xl text-accent">63</div>
+                    <!-- <div class="card-title text-xl text-accent">63</div> -->
                 </div>
 
             </div>
 
-            <div class="collapse-content grid gap-y-4 font-sans text-sm collapse-title text-l ">
+            <div class="collapse-content  gap-y-2 font-sans text-sm mt-2 text-l ">
 
                 <ul>
                     <!-- Habilidades específicas -->
-                    <li v-for="(skill, index) in category" :key="index">
-
-
-                        <div class="w-full ">
-                            <div class="flex place-content-between ">
+                    <li v-for="(skill, index) in category" :key="index" class="mb-4 mx-2">
+                        <div class="w-full flex flex-col items-center">
+                            <div class="w-full flex justify-between mb-2">
                                 <div class="text-l text-gray-400">{{ skill.name }}</div>
                                 <div class="text-l text-gray-400">{{ skill.value }}</div>
                             </div>
-                            <div id="app" class="max-w-md mx-auto">
+                            <div class="w-full">
                                 <input type="range" id="rangeInput" min="1" max="99" v-model="skill.value"
-                                    class="range range-sm range-primary w-full">
-
+                                    :class="[skill.value < 50 ? 'range-error': (skill.value < 70 ? 'range-accent' : 'range-secondary')]" class="range range-sm  w-full">
                             </div>
-
                         </div>
-
                     </li>
-
-
 
                 </ul>
             </div>
@@ -69,7 +51,7 @@
 export default {
     data() {
         return {
-            rangeValue: 50,
+            
             habilidades: {
                 Ritmo: [
                     { name: "Aceleración", value: 50 },

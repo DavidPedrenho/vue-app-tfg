@@ -19,7 +19,7 @@
                     <!-- Habilidades específicas -->
                     <div v-if="collapses[0].isExpanded">
 
-                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l ">
+                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l mt-1">
                             <div class="w-full ">
                                 <div class="flex place-content-between ">
                                     <div class="text-l text-gray-400">Aceleración</div>
@@ -63,7 +63,7 @@
                     <!-- Habilidades específicas -->
                     <div v-if="collapses[1].isExpanded">
 
-                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l ">
+                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l mt-2 ">
                             <div class="w-full ">
                                 <div class="flex place-content-between ">
                                     <div class="text-l text-gray-400">Definición</div>
@@ -116,7 +116,7 @@
                     <!-- Habilidades específicas -->
                     <div v-if="collapses[2].isExpanded">
 
-                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l ">
+                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l mt-2">
                             <div class="w-full ">
                                 <div class="flex place-content-between ">
                                     <div class="text-l text-gray-400">Visión</div>
@@ -176,7 +176,7 @@
                     <!-- Habilidades específicas -->
                     <div v-if="collapses[3].isExpanded">
 
-                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l ">
+                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l mt-2">
                             <div class="w-full ">
                                 <div class="flex place-content-between ">
                                     <div class="text-l text-gray-400">Agilidad</div>
@@ -245,7 +245,7 @@
                     <!-- Habilidades específicas -->
                     <div v-if="collapses[4].isExpanded">
 
-                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l ">
+                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l mt-2">
                             <div class="w-full ">
                                 <div class="flex place-content-between ">
                                     <div class="text-l text-gray-400">Intercepciones</div>
@@ -314,7 +314,7 @@
                     <!-- Habilidades específicas -->
                     <div v-if="collapses[5].isExpanded">
 
-                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l ">
+                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l mt-2">
                             <div class="w-full ">
                                 <div class="flex place-content-between ">
                                     <div class="text-l text-gray-400">Resistencia</div>
