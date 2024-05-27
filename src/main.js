@@ -6,18 +6,21 @@ import { createRouter, createWebHistory } from 'vue-router';
 import './assets/index.css';
 
 
-
-
-
 ///COMPONENTES
 
+//Jugador
 import PlayerComponent from './components/Player/Player-components.vue';
 import DiagramaHexComponent from './components/Player/DiagramaHex-components.vue';
 import SkillsComponent from './components/Player/skillsProfile-components.vue';
 
+//Equipos
 import CreateTeamsComponent from './components/Teams/CreateTeams-components.vue';
 
+//Partidos
 import MatchComponent from './components/Match/Match-components.vue';
+
+//Admin
+import FormPlayerComponent from './components/Admin/formNewPlayer-components.vue';
 
 
 
@@ -30,6 +33,8 @@ import PruebaComponent from './components/pruebas/PruebaComponent.vue';
 
 //Definir rutas -- config
 const routes = [
+
+    { path: '/form-player', component: FormPlayerComponent },
 
     { path: '/jugador', component: PlayerComponent },
     { path: '/hexagono', component: DiagramaHexComponent },

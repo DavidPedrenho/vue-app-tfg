@@ -1,5 +1,5 @@
 <template>
-    
+
 
     <div class="flex  flex-wrap justify-center  gap-4">
 
@@ -11,8 +11,8 @@
 
                 <div class="grid grid-row-2 font-sans text-sm collapse-title text-l">
 
-                    <div class="flex place-content-between mx-3">
-                        <div class="card-title text-xl text-accent">Ritmo</div>
+                    <div class="flex place-content-between mx-3 tracking-wider">
+                        <div class="card-title text-xl text-gray-300">Ritmo</div>
                         <div class="card-title text-xl text-accent">81</div>
                     </div>
 
@@ -55,8 +55,8 @@
 
                 <div class="grid grid-row-2 font-sans text-sm collapse-title text-l">
 
-                    <div class="flex place-content-between mx-3">
-                        <div class="card-title text-xl text-accent">Tiro</div>
+                    <div class="flex place-content-between mx-3 tracking-wider">
+                        <div class="card-title text-xl text-gray-300">Tiro</div>
                         <div class="card-title text-xl text-accent">74</div>
                     </div>
 
@@ -108,8 +108,8 @@
 
                 <div class="grid grid-row-2 font-sans text-sm collapse-title text-l">
 
-                    <div class="flex place-content-between mx-3">
-                        <div class="card-title text-xl text-accent">Pases</div>
+                    <div class="flex place-content-between mx-3 tracking-wider">
+                        <div class="card-title text-xl text-gray-300">Pases</div>
                         <div class="card-title text-xl text-accent">87</div>
                     </div>
 
@@ -160,7 +160,191 @@
             </div>
         </div>
 
+        <!--REGATES -->
+        <div class="card w-96 ">
 
+            <div tabindex="0" class="collapse collapse-arrow  border border-base-300 bg-base-200">
+                <input v-on:click="Expanded(3)" type="checkbox" class="peer" />
+
+                <div class="grid grid-row-2 font-sans text-sm collapse-title text-l">
+
+                    <div class="flex place-content-between mx-3 tracking-wider">
+                        <div class="card-title text-xl text-gray-300">Regates</div>
+                        <div class="card-title text-xl text-accent">83</div>
+                    </div>
+
+                    <!-- Habilidades específicas -->
+                    <div v-if="collapses[3].isExpanded">
+
+                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l ">
+                            <div class="w-full ">
+                                <div class="flex place-content-between ">
+                                    <div class="text-l text-gray-400">Agilidad</div>
+                                    <div class="text-l text-gray-400">75</div>
+                                </div>
+                                <progress class="progress progress-secondary" value="75" max="100"></progress>
+                            </div>
+
+                            <div>
+                                <div class="flex place-content-between ">
+                                    <div class="text-l text-gray-400">Regates</div>
+                                    <div class="text-l text-gray-400">78</div>
+                                </div>
+                                <progress class="progress progress-secondary " value="45" max="100"></progress>
+                            </div>
+
+                            <div>
+                                <div class="flex place-content-between ">
+                                    <div class="text-l text-gray-400">Anticipación</div>
+                                    <div class="text-l text-gray-400">73</div>
+                                </div>
+                                <progress class="progress progress-secondary " value="73" max="100"></progress>
+                            </div>
+
+                            <div>
+                                <div class="flex place-content-between ">
+                                    <div class="text-l text-gray-400">Equilibrio</div>
+                                    <div class="text-l text-gray-400">79</div>
+                                </div>
+                                <progress class="progress progress-secondary " value="79" max="100"></progress>
+                            </div>
+
+                            <div>
+                                <div class="flex place-content-between ">
+                                    <div class="text-l text-gray-400">Control balón</div>
+                                    <div class="text-l text-gray-400">84</div>
+                                </div>
+                                <progress class="progress progress-secondary " value="84" max="100"></progress>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <!--DEFENSA -->
+        <div class="card w-96 ">
+
+            <div tabindex="0" class="collapse collapse-arrow  border border-base-300 bg-base-200">
+                <input v-on:click="Expanded(4)" type="checkbox" class="peer" />
+
+                <div class="grid grid-row-2 font-sans text-sm collapse-title text-l">
+
+                    <div class="flex place-content-between mx-3 tracking-wider">
+                        <div class="card-title text-xl text-gray-300">Defensa</div>
+                        <div class="card-title text-xl text-accent">71</div>
+                    </div>
+
+                    <!-- Habilidades específicas -->
+                    <div v-if="collapses[4].isExpanded">
+
+                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l ">
+                            <div class="w-full ">
+                                <div class="flex place-content-between ">
+                                    <div class="text-l text-gray-400">Intercepciones</div>
+                                    <div class="text-l text-gray-400">74</div>
+                                </div>
+                                <progress class="progress progress-secondary" value="75" max="100"></progress>
+                            </div>
+
+                            <div>
+                                <div class="flex place-content-between ">
+                                    <div class="text-l text-gray-400">Robos</div>
+                                    <div class="text-l text-gray-400">74</div>
+                                </div>
+                                <progress class="progress progress-secondary " value="45" max="100"></progress>
+                            </div>
+
+                            <div>
+                                <div class="flex place-content-between ">
+                                    <div class="text-l text-gray-400">Entradas</div>
+                                    <div class="text-l text-gray-400">73</div>
+                                </div>
+                                <progress class="progress progress-secondary " value="73" max="100"></progress>
+                            </div>
+
+                            <div>
+                                <div class="flex place-content-between ">
+                                    <div class="text-l text-gray-400">Cap. defensiva</div>
+                                    <div class="text-l text-gray-400">79</div>
+                                </div>
+                                <progress class="progress progress-secondary " value="79" max="100"></progress>
+                            </div>
+
+                            <div>
+                                <div class="flex place-content-between ">
+                                    <div class="text-l text-gray-400">Prec. cabezazo</div>
+                                    <div class="text-l text-gray-400">84</div>
+                                </div>
+                                <progress class="progress progress-secondary " value="84" max="100"></progress>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <!--FÍSICO -->
+        <div class="card w-96 ">
+
+            <div tabindex="0" class="collapse collapse-arrow  border border-base-300 bg-base-200">
+                <input v-on:click="Expanded(5)" type="checkbox" class="peer" />
+
+                <div class="grid grid-row-2 font-sans text-sm collapse-title text-l">
+
+                    <div class="flex place-content-between mx-3 tracking-wider">
+                        <div class="card-title text-xl text-gray-300">Físico</div>
+                        <div class="card-title text-xl text-accent">63</div>
+                    </div>
+
+                    <!-- Habilidades específicas -->
+                    <div v-if="collapses[5].isExpanded">
+
+                        <div class="grid gap-y-4 font-sans text-sm collapse-title text-l ">
+                            <div class="w-full ">
+                                <div class="flex place-content-between ">
+                                    <div class="text-l text-gray-400">Resistencia</div>
+                                    <div class="text-l text-gray-400">79</div>
+                                </div>
+                                <progress class="progress progress-secondary" value="75" max="100"></progress>
+                            </div>
+
+                            <div>
+                                <div class="flex place-content-between ">
+                                    <div class="text-l text-gray-400">Fuerza</div>
+                                    <div class="text-l text-gray-400">72</div>
+                                </div>
+                                <progress class="progress progress-secondary " value="45" max="100"></progress>
+                            </div>
+
+                            <div>
+                                <div class="flex place-content-between ">
+                                    <div class="text-l text-gray-400">Agresividad</div>
+                                    <div class="text-l text-gray-400">85</div>
+                                </div>
+                                <progress class="progress progress-secondary " value="73" max="100"></progress>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 
         <!-- -------------------------------------------- -->
