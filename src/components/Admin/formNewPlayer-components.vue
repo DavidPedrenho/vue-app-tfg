@@ -7,7 +7,7 @@
 
             <label class="form-control ">
                 <div class="label">
-                    <span class="label-text text-xl font-sans">Nombre de usuario</span>
+                    <span class=" card-title label-text text-2xl font-sans">Nombre de usuario</span>
 
                 </div>
                 <input type="text" placeholder="usuario"
@@ -16,27 +16,20 @@
             </label>
         </div>
 
-        <div class=" flex flex-wrap justify-center gap-4 sm:grid sm:grid-cols-3">
 
+        <!-- HABILIDADES -->
 
-
-            <!-- HABILIDADES -->
-            <div v-for="(category, categoryName) in habilidades" :key="categoryName" class="card max-w-80 ">
-
-                <div tabindex="0" class="collapse collapse-arrow  border border-primary bg-base-200">
+        <div class="max-w-screen-lg mx-auto flex flex-wrap justify-center gap-x-4 gap-y-4 sm:grid sm:grid-cols-3">
+            <div v-for="(category, categoryName) in habilidades" :key="categoryName" class="card w-full sm:max-w-80">
+                <div tabindex="0" class="collapse collapse-arrow border border-primary bg-base-200">
                     <input type="checkbox" class="peer" />
-
-                    <div class="font-sans text-sm collapse-title text-l">
-
-                        <div class="flex place-content-between  mx-3 tracking-wider">
-                            <div class="card-title mt-2 text-xl text-gray-300">{{ categoryName }}</div>
+                    <div class="font-sans text-sm collapse-title">
+                        <div class="flex justify-between mx-3 tracking-wider">
+                            <div class="card-title mt-2 text-lg text-gray-300">{{ categoryName }}</div>
                             <!-- <div class="card-title text-xl text-accent">63</div> -->
                         </div>
-
                     </div>
-
-                    <div class="collapse-content  gap-y-2 font-sans text-sm mt-2 text-l ">
-
+                    <div class="collapse-content gap-y-2 font-sans text-sm mt-2 text-l">
                         <ul>
                             <!-- Habilidades específicas -->
                             <li v-for="(skill, index) in category" :key="index" class="mb-4 mx-2">
@@ -47,25 +40,24 @@
                                     </div>
                                     <div class="w-full">
                                         <input type="range" id="rangeInput" min="1" max="99" v-model="skill.value"
-                                            :class="[skill.value < 50 ? 'range-error' : (skill.value < 70 ? 'range-accent' : 'range-secondary')]"
-                                            class="range range-sm  w-full">
+                                            :class="[skill.value < 40 ? 'range-error' : (skill.value < 70 ? 'range-accent' : 'range-secondary')]"
+                                            class="range range-sm w-full">
                                     </div>
                                 </div>
                             </li>
-
                         </ul>
                     </div>
-
                 </div>
             </div>
-
         </div>
 
 
 
+
         <div class="flex justify-end ">
-            <div class="flex flex-row gap-4 w-full sm:w-1/3 sm:px-4 mt-7">
-                <button class="btn border-2 border-primary flex-1 font-sans tracking-wider rounded-xl">Restablecer</button>
+            <div class="flex flex-row gap-3 w-full sm:w-1/3 sm:px-3 mt-6">
+                <button
+                    class="btn border-2 border-primary text-primary flex-1 font-sans tracking-wider rounded-xl">Restablecer</button>
                 <button class="btn btn-secondary flex-1 font-sans tracking-wider rounded-xl">Crear Jugador</button>
             </div>
         </div>

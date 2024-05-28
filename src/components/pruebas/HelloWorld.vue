@@ -60,6 +60,16 @@
 </div>
 </div>
 
+
+<div class="flex justify-end ">
+            <div class="flex flex-row justify-center gap-x-3 w-full sm:w-1/3 sm:pl-3 mt-7">
+                <button
+                    class="btn border-2 border-primary text-primary flex-1 font-sans tracking-wider rounded-xl">Restablecer</button>
+                <button class="btn btn-secondary flex-1 font-sans tracking-wider rounded-xl">Crear Jugador</button>
+            </div>
+        </div>
+
+
   </div>
 </template>
 
