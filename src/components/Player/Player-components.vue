@@ -10,7 +10,7 @@
 
     <div class="h-screen w-screen flex md:flex-row flex-col justify-center items-center gap-5 ">
       <div class="card w-96 bg-base-100 shadow-xl border-4 border-neutral">
-        <figure><img src="https://img.europapress.es/fotoweb/fotonoticia_20141217071751_690.jpg" alt="Shoes" />
+        <figure><img :src="imagen2" alt="Shoes" class="rounded-full mt-8 bg-slate-400"/>
         </figure>
         <div class="card-body gap-5">
           <div>
@@ -96,7 +96,16 @@
 
 
 <script>
-//GRAFICO DE RADAR(CLIP-PATH)
+/* eslint-disable */
+
+export default {
+  data() {
+    return {
+      imagen1: require('../../assets/pruebaFoto.png'),
+      imagen2: require('../../assets/purbaCompo.png'),
+    };
+  }
+};
 </script>
 
 

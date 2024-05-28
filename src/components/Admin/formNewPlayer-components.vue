@@ -40,7 +40,7 @@
                                     <div class="w-full">
                                         <input type="range" id="rangeInput" min="1" max="99" v-model="skill.value"
                                             :class="[skill.value < 40 ? 'range-error' : (skill.value < 70 ? 'range-accent' : 'range-secondary')]"
-                                            class="range range-sm w-full">
+                                            class="range range-xs w-full">
                                     </div>
                                 </div>
                             </li>

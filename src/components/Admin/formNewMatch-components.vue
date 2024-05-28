@@ -1,39 +1,101 @@
 <template>
-
-    <div>
-
-
-
-        <div class="relative max-w-sm">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                </svg>
-            </div>
-            <input datepicker datepicker-buttons datepicker-autoselect-today type="text"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Select date">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-screen-md mx-auto">
+    <!-- Lugar -->
+    <div class="flex flex-wrap">
+      <label class="form-control w-full">
+        <div class="label">
+          <span class="card-title label-text text-2xl font-sans ml-2 sm:ml-0">Lugar</span>
         </div>
-
-
-
-        <div class="max-w-screen-lg mx-auto">
-
-            <div class="my-6 ">
-
-                <label class="form-control ">
-                    <div class="label">
-                        <span class=" card-title label-text text-xl font-sans">Día</span>
-
-                    </div>
-                    <input type="text" placeholder="usuario" maxlength="15"
-                        class="input input-bordered input-primary sm:max-w-80 w-full rounded-xl placeholder:text-gray-700 font-sans text-gray-300" />
-                </label>
-            </div>
-        </div>
-
-
+        <input type="text" placeholder="Lugar" maxlength="26"
+          class="input input-bordered input-primary w-full rounded-xl font-sans text-gray-300" />
+      </label>
     </div>
+
+    <!-- Fecha -->
+    <div class="flex flex-wrap">
+      <label class="form-control w-full">
+        <div class="label">
+          <span class="card-title label-text text-2xl font-sans ml-2 sm:ml-0">Fecha</span>
+        </div>
+        <input type="date" v-model="date"
+          class="input input-bordered input-primary w-full rounded-xl placeholder:text-gray-700 font-sans text-gray-300" />
+      </label>
+    </div>
+
+    <!-- Hora -->
+    <div class="flex flex-wrap">
+      <label class="form-control w-full">
+        <div class="label">
+          <span class="card-title label-text text-2xl font-sans ml-2 sm:ml-0">Hora</span>
+        </div>
+        <input type="time" v-model="date" min="09:00" max="22:00" required
+          class="input input-bordered input-primary w-full rounded-xl placeholder:text-gray-700 font-sans text-gray-300" />
+      </label>
+    </div>
+
+    <!-- Nº de jugadores -->
+    <div class="flex flex-wrap">
+      <label class="form-control w-full">
+        <div class="label">
+          <span class="card-title label-text text-2xl font-sans ml-2 sm:ml-0">Nº de jugadores</span>
+        </div>
+        <input type="number" placeholder="Nº jugadores" maxlength="15"
+          class="input input-bordered input-primary w-full rounded-xl font-sans text-gray-300" />
+      </label>
+    </div>
+
+    <!-- Lista jugadores -->
+    <div class="col-span-1 sm:col-span-2 my-6">
+      <div tabindex="0" class="collapse collapse-arrow border border-primary">
+        <input type="checkbox" class="peer" />
+        <div class="collapse-title text-xl text-left ml-1 font-sans text-gray-400">
+          Añadir Jugadores
+        </div>
+        <div class="collapse-content gap-3 text-gray-500">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2  gap-y-4 sm:gap-y-0 gap-x-32 font-sans text-sm py-4 text-secondary text-opacity-55 mr-2 w-full px-6 ">
+            <label v-for="(item, index) in items" :key="index" class="cursor-pointer label flex items-center   place-content-between">
+              <span class="label-text !text-lg">{{ item.label }}</span>
+              <input type="checkbox" v-model="item.checked" class="checkbox checkbox-secondary" />
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones -->
+    <div>
+      <button v-on:click="submit"
+        class="btn border-primary w-full font-sans text-primary tracking-wider rounded-xl text-xl">Limpiar</button>
+    </div>
+    <div>
+      <button v-on:click="submit" class="btn btn-secondary w-full font-sans tracking-wider rounded-xl text-xl">Crear
+        Partido</button>
+    </div>
+  </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      date: '',
+      items: [
+        { label: 'Remember me', checked: true },
+        { label: 'Option 2', checked: false },
+        { label: 'Option 3', checked: true },
+        { label: 'Option 4', checked: false },
+      ]
+    };
+  },
+  methods: {
+    submit() {
+      console.log('Botón presionado');
+    }
+  }
+};
+</script>
+
+<style scoped>
+/* Estilos personalizados si es necesario */
+</style>
