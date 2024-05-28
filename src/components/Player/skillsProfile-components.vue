@@ -1,7 +1,7 @@
 <template>
 
 
-    <div class="flex  flex-wrap justify-center  gap-4">
+<div class="max-w-screen-xl  mx-auto  flex flex-wrap justify-center gap-4 sm:grid sm:grid-cols-3">
 
         <!-- RITMO -->
         <div class="card w-96 ">
