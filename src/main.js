@@ -21,6 +21,7 @@ import MatchComponent from './components/Match/Match-components.vue';
 
 //Admin
 import FormPlayerComponent from './components/Admin/formNewPlayer-components.vue';
+import FormNewMatchComponents from './components/Admin/formNewMatch-components.vue';
 
 
 
@@ -31,17 +32,19 @@ import PruebaComponent from './components/pruebas/PruebaComponent.vue';
 
 
 
-//Definir rutas -- config
+
+//DEFINIR RUTAS
 const routes = [
 
-    { path: '/form-player', component: FormPlayerComponent },
+    { path: '/form-player', component: FormPlayerComponent },   //Formularios
+    { path: '/form-match', component: FormNewMatchComponents},
 
-    { path: '/jugador', component: PlayerComponent },
-    { path: '/hexagono', component: DiagramaHexComponent },
+    { path: '/player', component: PlayerComponent },          //Jugadores
+    { path: '/hexagon', component: DiagramaHexComponent },
     { path: '/skills', component: SkillsComponent },
 
-    { path: '/crear-equipos', component: CreateTeamsComponent },
-    { path: '/partido', component: MatchComponent },
+    { path: '/create-teams', component: CreateTeamsComponent },//Partidos
+    { path: '/match', component: MatchComponent },
 
 
     { path: '/mi-componente', component: MiComponente },

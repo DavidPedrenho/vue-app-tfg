@@ -10,9 +10,8 @@
                     <span class=" card-title label-text text-2xl font-sans">Nombre de usuario</span>
 
                 </div>
-                <input type="text" placeholder="usuario"
-                    class="  input input-bordered input-primary sm:max-w-80 w-full  rounded-xl" />
-
+                <input type="text" placeholder="usuario" maxlength="15"
+                    class="input input-bordered input-primary sm:max-w-80 w-full rounded-xl placeholder:text-gray-700 font-sans text-gray-300" />
             </label>
         </div>
 
@@ -57,7 +56,7 @@
         <div class="flex justify-end ">
             <div class="flex flex-row gap-3 w-full sm:w-1/3 sm:px-3 mt-6">
                 <button
-                    class="btn border-2 border-primary text-primary flex-1 font-sans tracking-wider rounded-xl">Restablecer</button>
+                    class="btn border-2 border-primary text-primary flex-1 font-sans tracking-wider rounded-xl">Limpiar</button>
                 <button class="btn btn-secondary flex-1 font-sans tracking-wider rounded-xl">Crear Jugador</button>
             </div>
         </div>
