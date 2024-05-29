@@ -1,6 +1,7 @@
 <template>
   <div id="app">
   
+    <menu-components></menu-components>
     
     <!-- <h1><router-link to="/">Home</router-link></h1> -->
     
@@ -25,12 +26,15 @@
 </template>
 
 <script >
-
+/* eslint-disable */
+import MenuComponents from './components/menu-components.vue';
 
 
 export default {
   name: "App",
-  components: {},
+  components: {
+    MenuComponents
+  },
 };
 
 </script>
