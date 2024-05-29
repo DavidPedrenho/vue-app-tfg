@@ -12,6 +12,8 @@ import './assets/index.css';
 
 ///COMPONENTES
 
+import MenuComponent from './components/menu-components.vue';
+
 //Jugador
 import PlayerComponent from './components/Player/Player-components.vue';
 import DiagramaHexComponent from './components/Player/DiagramaHex-components.vue';
@@ -39,6 +41,7 @@ import PruebaComponent from './components/pruebas/PruebaComponent.vue';
 
 //DEFINIR RUTAS
 const routes = [
+    { path: '/menu', component: MenuComponent },
 
     { path: '/form-player', component: FormPlayerComponent },   //Formularios
     { path: '/form-match', component: FormNewMatchComponents},
