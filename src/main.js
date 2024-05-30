@@ -1,6 +1,4 @@
 /* eslint-disable */
-// import { createApp } from 'vue';
-// import { createRouter, createWebHistory } from 'vue-router';
 
 import Vue from 'vue';
 import App from './App.vue'
@@ -36,8 +34,6 @@ import PlayersMenu from './Menu-components/PlayersMenu.vue';
 import SettingMenu from './Menu-components/SettingMenu.vue';
 
 
-//Vue.config.productionTip = false
-
 Vue.use(VueRouter);
 
 
@@ -66,7 +62,9 @@ const routes = [
       path: '/ajustes',
       name: 'ajustes',
       component: SettingMenu
-    }
+    },
+
+
 
 ]
 
@@ -87,7 +85,14 @@ new Vue({
 
 
 
+// Función para poner la posición de la pag al incio
 
+router.beforeEach((to, from, next) => {
+  window.scrollTo(0, 0); 
+  next(); 
+});
+
+export default router;
 
 
 // import MyConnectDb from './components/pruebas/ConnectDataBase.vue';

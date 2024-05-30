@@ -1,14 +1,9 @@
 <template>
   <div>
-    <br>
-    <br>
-    
-
-
 
     <!-- Jugador-->
 
-    <div class="h-screen w-screen flex md:flex-row flex-col justify-center items-center gap-5 ">
+    <div class="flex md:flex-row flex-col justify-center items-center gap-5 ">
       <div class="card w-96 bg-base-100 shadow-xl border-4 border-neutral">
         <figure><img :src="imagen2" alt="Shoes" class="rounded-full mt-8 bg-slate-400"/>
         </figure>
@@ -68,26 +63,6 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <br />
-    <br />
-
-
-
-
 
   </div>
 

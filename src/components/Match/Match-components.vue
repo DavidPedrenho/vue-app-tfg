@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="h-screen w-screen flex md:flex-row flex-col justify-center items-center gap-5 ">
+        <div class="flex md:flex-row flex-col justify-center items-center gap-5 ">
             <div class="card w-96 bg-base-100 shadow-xl border-4 border-neutral">
                 <div class=" h-auto text-8xl">
                     <h1 class=" mt-7 text-gray-300 tracking-tighter text-center"> 3 - 6</h1>
@@ -8,10 +8,10 @@
                 <div class="card-body gap-5">
                     <div>
                        
-                        <div class="flex flex-wrap items-center gap-2 ">
+                        <div class="flex flex-wrap gap-2 ">
                             <div class="badge badge-secondary font-sans p-3">14/05/24</div>
-                            <div class="badge badge-primary font-sans p-3">Pabellón Mun. de La Unión</div>
                             <div class="badge badge-secondary font-sans p-3">20:00 p.m.</div>
+                            <div class="badge badge-primary font-sans p-3">Pabellón Mun. de La Unión</div>
                             <div class="badge badge-accent font-sans p-3">MVP: Perico_garcia34</div>
 
                         </div>

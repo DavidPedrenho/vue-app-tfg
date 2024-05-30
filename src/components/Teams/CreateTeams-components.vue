@@ -1,10 +1,9 @@
 <template>
-    <div>
+    <div class="!max-w-screen-md mx-auto">
         <!-- DIVISOR EQUIPOS -->
 
-        <div class="flex flex-col md:space-x-6 lg:flex-row max-w-4xl w-full font-sans mx-auto">
-            <div
-                class="flex md:w-1/2 bg-base-300 rounded-box pb-1">
+        <div class="flex flex-col  md:space-x-6 lg:flex-row max-w-4xl w-full font-sans mx-auto">
+            <div class="flex md:w-1/2 bg-base-300 rounded-box pb-1">
 
                 <div class="grid w-full grid-cols-2">
 
@@ -21,7 +20,7 @@
                         <span>Pepillos_truck</span>
                         <span>Pepillos_truck</span>
                         <span>Pepillos_truck</span>
-                        
+
                     </div>
 
                 </div>
@@ -34,8 +33,7 @@
 
 
             <!-- VISITANTE -->
-            <div
-                class="flex md:w-1/2 bg-base-300 rounded-box pb-1">
+            <div class="flex md:w-1/2 bg-base-300 rounded-box pb-1">
 
                 <div class="grid w-full grid-cols-2">
 
@@ -52,7 +50,7 @@
                         <span>Juanillos_truck</span>
                         <span>Juanillos_truck</span>
                         <span>Juanillos_truck</span>
-                        
+
                     </div>
 
                 </div>
@@ -68,17 +66,20 @@
 
         <!-- MEDIAS EQUIPOS -->
 
-        
 
 
-        <div class="flex flex-col lg:flex-row max-w-4xl mx-auto sm:space-y-0 space-y-2 sm:space-x-12 mt-6 font-sans">
+
+
+
+        <div
+            class="flex flex-col lg:flex-row  mx-auto max-w-screen-md sm:space-y-0 space-y-2 sm:space-x-9 mt-6 font-sans">
 
             <!-- Medias Local Button -->
 
-            <div class="sm:w-1/2 ">
+            <div class="w-full lg:w-auto ">
 
 
-                <div class="join flex w-full gap-1 sm:my-0 my-1 justify-center ">
+                <div class="join flex lg:w-auto w-full gap-1 sm:my-0 my-1 sm:mr-2 justify-center ">
 
                     <div>
                         <button v-on:click="toggleActiveLocal('button1')" class="btn join-item"
@@ -111,10 +112,10 @@
 
             <!-- Medias visitante Button -->
 
-            <div class="sm:w-1/2">
+            <div class="w-full lg:w-auto">
 
 
-                <div class=" join inline-flex w-full gap-1 sm:my-0 my-1 justify-center ">
+                <div class=" join lg:w-auto w-full gap-1 sm:my-0 my-1 justify-center ">
 
                     <div>
                         <button v-on:click="toggleActiveVisitante('button1v')" class="btn join-item"
@@ -124,7 +125,7 @@
 
                     <div>
                         <button v-on:click="toggleActiveVisitante('button2v')" class="btn join-item"
-                            :class="[activeButtonsVisitante.button2v ?  'btn-primary bg-opacity-60 border-none': 'btn-primary']">Defensivo</button>
+                            :class="[activeButtonsVisitante.button2v ? 'btn-primary bg-opacity-60 border-none' : 'btn-primary']">Defensivo</button>
                         <p v-if="activeButtonsVisitante.button2v" class="mt-1 text-gray-400">M: 74</p>
                     </div>
                     <div>
@@ -149,7 +150,6 @@
         </div>
 
 
-
     </div>
 </template>
 
@@ -166,7 +166,7 @@ export default {
                 button2: false,
                 button3: false,
                 button4: false,
-                
+
             },
 
             activeButtonsVisitante: {
@@ -175,7 +175,7 @@ export default {
                 button3v: false,
                 button4v: false,
             }
-            
+
         };
     },
     methods: {

@@ -1,25 +1,39 @@
 <template>
 
 
-    <div class="max-w-screen-lg mx-auto">
+    <div class="max-w-screen-md mx-auto w-full flex flex-col items-center">
 
-        <div class="my-6 ">
+        <div class="sm:grid sm:grid-cols-2 gap-x-6 grid-row-1  mb-10 sm:mb-0  w-full   ">
 
-            <label class="form-control ">
-                <div class="label">
-                    <span class=" card-title label-text text-2xl font-sans">Nombre de usuario</span>
+            <div class="w-full  flex flex-col items-center my-6">
+                <label class="form-control w-full">
+                    <div class="label">
+                        <span class="card-title label-text text-2xl font-sans">Nombre de usuario</span>
+                    </div>
+                    <input type="text" placeholder="usuario" maxlength="15"
+                        class="input input-bordered input-primary  w-full rounded-xl placeholder:text-gray-700 font-sans text-gray-300" />
+                </label>
+            </div>
 
-                </div>
-                <input type="text" placeholder="usuario" maxlength="15"
-                    class="input input-bordered input-primary sm:max-w-80 w-full rounded-xl placeholder:text-gray-700 font-sans text-gray-300" />
-            </label>
+            <div class="min-w-full flex flex-col items-center my-6">
+                <label class="form-control w-full">
+                    <div class="label">
+                        <span class="card-title label-text text-2xl font-sans">Añadir foto</span>
+                    </div>
+                    <input type="file" placeholder="usuario" maxlength="15"
+                        class="file-input file-input-bordered input-primary file-input-primary  w-full rounded-xl placeholder:text-gray-700 font-sans text-gray-300" />
+                </label>
+            </div>
+
         </div>
+
 
 
         <!-- HABILIDADES -->
 
-        <div class="max-w-screen-lg mx-auto flex flex-wrap justify-center gap-x-4 gap-y-4 sm:grid sm:grid-cols-3">
-            <div v-for="(category, categoryName) in habilidades" :key="categoryName" class="card w-full sm:max-w-80">
+        <div class="max-w-screen-md w-full flex flex-wrap  gap-6 sm:grid sm:grid-cols-2">
+            
+            <div v-for="(category, categoryName) in habilidades" :key="categoryName" class="card w-full">
                 <div tabindex="0" class="collapse collapse-arrow border border-primary bg-base-200">
                     <input type="checkbox" class="peer" />
                     <div class="font-sans text-sm collapse-title">
@@ -53,8 +67,8 @@
 
 
 
-        <div class="flex justify-end ">
-            <div class="flex flex-row gap-3 w-full sm:w-1/3 sm:px-3 mt-6">
+        <div class="flex justify-end w-full sm:w-1/2">
+            <div class="flex flex-row gap-4 sm:gap-6 w-full   mt-6">
                 <button
                     class="btn border-2 border-primary text-primary flex-1 font-sans tracking-wider rounded-xl">Limpiar</button>
                 <button class="btn btn-secondary flex-1 font-sans tracking-wider rounded-xl">Crear Jugador</button>

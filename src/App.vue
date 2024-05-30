@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-  
+  <div class="flex flex-col sm:my-16 ">
     <menu-components></menu-components>
+  </div>
+    
     
     <!-- <h1><router-link to="/">Home</router-link></h1> -->
     
@@ -17,9 +19,13 @@
     
 
     
-    
-     
+   <div class=" mb-20" >
     <router-view></router-view>
+   </div>
+      
+   
+     
+    
    
     
   </div>
