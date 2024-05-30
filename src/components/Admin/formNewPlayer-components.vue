@@ -1,6 +1,6 @@
 <template>
 
-    <form @submit.prevent="sendFormPlayers">
+    <form @submit.prevent="submitFormPlayers">
         <div class="max-w-screen-md mx-auto w-full flex flex-col items-center">
 
             <div class="sm:grid sm:grid-cols-2 gap-x-6 grid-row-1  mb-10 sm:mb-0  w-full   ">
@@ -83,7 +83,7 @@
         </div>
         <div>
             <button class="btn" @click="getFormData">Obtener Datos del Formulario</button>
-            <button class="btn" @click="getFormData">Borrar Datos del Formulario</button>
+            <button class="btn" @click="deleteElement">Borrar Datos del Formulario</button>
         </div>
 
     </form>
@@ -171,8 +171,7 @@ export default {
             // Guardamos la lista actualizada en localStorage
             localStorage.setItem('listPlayers', JSON.stringify(this.listPlayers));
 
-            // Limpiamos el formulario
-            this.nameUser = '';
+            
         },
 
 
@@ -188,7 +187,10 @@ export default {
 
         },
         deleteElement(index) {
-            this.listPlayers.splice(index, 1);
+            this.listPlayers.splice(11, 1);
+
+            // Guardar el array actualizado en localStorage
+            localStorage.setItem('listPlayers', JSON.stringify(this.listPlayers));
         }
     }
 };
