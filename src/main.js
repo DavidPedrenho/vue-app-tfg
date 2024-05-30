@@ -34,6 +34,9 @@ import PlayersMenu from './Menu-components/PlayersMenu.vue';
 import SettingMenu from './Menu-components/SettingMenu.vue';
 
 
+// Instancia de Vue para emitir y escuchar eventos entre los componentes
+export const EventBus = new Vue();
+
 Vue.use(VueRouter);
 
 
